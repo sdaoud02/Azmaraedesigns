@@ -627,21 +627,27 @@
             <h2 class="section-title">THE ART OF SUBTLETY</h2>
             <div class="grid">
                 <div class="card">
-                    <div class="card-icon"><i class="fas fa-pen-nib"></i></div>
+                    <div class="card-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
                     <h3>Intentional Design</h3>
                     <p>Every curve, every line, every texture is a conscious choice. We create pieces that balance
                         softness with strength, whispering elegance rather than shouting for attention.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i class="fas fa-infinity"></i></div>
+                    <div class="card-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
                     <h3>Timeless Quality</h3>
                     <p>In a world of trends, we choose permanence. Our designs are crafted to evolve with you, becoming
                         more meaningful with time. Luxury that lasts, in both form and spirit.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i class="fas fa-volume-mute"></i></div>
+                    <div class="card-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
                     <h3>Quiet Confidence</h3>
-                    <p>Azmaraè is for those who understand that true power doesn't need volume. It's in the subtle
+                    <p>Azmarae is for those who understand that true power doesn't need volume. It's in the subtle
                         details, the understated elegance, the confidence that speaks softly.</p>
                 </div>
             </div>
@@ -649,34 +655,118 @@
         <div class="feature-highlight">
             <div class="feature-content">
                 <h2>ELEVATE YOUR EVERYDAY</h2>
-                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; color: var(--muted);"> Experience
-                    the intersection of luxury and mindfulness. Each piece is an invitation to live more intentionally,
-                    to choose quality over quantity, and to embrace the power of quiet confidence. </p> <a
-                    href="Shop.html" class="btn">Discover Our World</a>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2rem; color: var(--muted);">
+                    Experience the intersection of luxury and mindfulness. Each piece is an invitation to live more
+                    intentionally, to choose quality over quantity, and to embrace the power of quiet confidence.
+                </p>
+                <a href="Shop.html" class="btn">Discover Our World</a>
             </div>
         </div>
-        <section class="newsletter-section">
+
+        <section class="newsletter-section" id="newsletter">
             <h2 class="section-title">JOIN OUR WORLD</h2>
             <p
                 style="text-align: center; color: var(--muted); margin-bottom: 3rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                 Be the first to experience new collections, exclusive events, and insights into intentional living.
-                Subscribe to receive curated content that aligns with the Unseen philosophy. </p>
-            <form class="newsletter-form" id="newsletter-form">
-                <div class="form-group"> <input type="email" class="newsletter-input" placeholder="Your email address"
-                        required> </div> <button type="submit" class="btn"
-                    style="min-width: 150px; padding: 1.2rem 2rem;">Subscribe</button>
-            </form>
+                Subscribe to receive curated content that aligns with the Azmarae philosophy.
+            </p>
+
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <form style="display: flex; gap: 1rem; max-width: 500px; width: 100%; justify-content: center;"
+                    id="newsletter-form">
+                    <div style="flex: 1; max-width: 300px;">
+                        <input type="email"
+                            style="width: 100%; padding: 1.2rem 1.5rem; background: var(--card-bg); border: 1px solid rgba(229, 231, 235, 0.8); border-radius: 12px; color: var(--text); font-size: 1rem; transition: all 0.3s ease;"
+                            placeholder="Your email address" required>
+                    </div>
+                    <button type="submit" class="btn"
+                        style="width: auto; min-width: 150px; padding: 1.2rem 2rem;">Subscribe</button>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>© 2026 Azmaraè Designs. All rights reserved.</p>
+        <p>© 2026 Azmarae Designs. All rights reserved.</p>
         <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.7;">Quiet confidence, redefined.</p>
-        <div class="socials"> <a href="https://instagram.com/azmaraedesigns" target="_blank" aria-label="Instagram"> <i
-                    class="fab fa-instagram"></i> </a> <a href="https://www.tiktok.com/@azmaraedesigns" target="_blank"
-                aria-label="TikTok"> <i class="fab fa-tiktok"></i> </a> <a href="https://pinterest.com/azmaraedesigns"
-                target="_blank" aria-label="Pinterest"> <i class="fab fa-pinterest"></i> </a> </div>
+        <div class="socials">
+            <a href="https://instagram.com/azmaraedesigns" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@azmaraedesigns" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://pinterest.com/azmaraedesigns" target="_blank" aria-label="Pinterest">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
     </footer>
-    <script> // Animate cards on scroll const cards = document.querySelectorAll('.card'); const cardObserver = new IntersectionObserver((entries) => { entries.forEach((entry, index) => { if (entry.isIntersecting) { setTimeout(() => { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }, index * 200); } }); }, { threshold: 0.1 }); cards.forEach(card => { card.style.opacity = '0'; card.style.transform = 'translateY(30px)'; card.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; cardObserver.observe(card); }); // Smooth scrolling for navigation links document.querySelectorAll('nav a').forEach(anchor => { anchor.addEventListener('click', function (e) { e.preventDefault(); const targetId = this.getAttribute('href'); if (targetId.startsWith('#')) { const targetElement = document.querySelector(targetId); if (targetElement) { window.scrollTo({ top: targetElement.offsetTop - 80, behavior: 'smooth' }); } } else { window.location.href = targetId; } }); }); // Newsletter form submission const newsletterForm = document.getElementById('newsletter-form'); if (newsletterForm) { newsletterForm.addEventListener('submit', function (e) { e.preventDefault(); const submitBtn = this.querySelector('.btn'); const originalText = submitBtn.textContent; submitBtn.textContent = 'Subscribed!'; submitBtn.style.background = 'linear-gradient(135deg, #2E8B57, #3CB371)'; setTimeout(() => { submitBtn.textContent = originalText; submitBtn.style.background = 'linear-gradient(135deg, var(--accent), #d4af37)'; this.reset(); }, 2000); }); } // Subtle mouse movement effect document.addEventListener('mousemove', (e) => { const hero = document.querySelector('.hero'); if (hero) { const x = (window.innerWidth - e.pageX) / 100; const y = (window.innerHeight - e.pageY) / 100; hero.style.backgroundPosition = ${x}px ${y}px; } }); </script>
+
+    <script>
+        const cards = document.querySelectorAll('.card, .collection-card');
+
+        const cardObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 200);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        cards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            cardObserver.observe(card);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            const heroBg = document.querySelector('.hero-bg');
+            if (heroBg) {
+                const x = (window.innerWidth - e.pageX) / 100;
+                const y = (window.innerHeight - e.pageY) / 100;
+                heroBg.style.transform = `translate(${x}px, ${y}px)`;
+            }
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                } else {
+                    window.location.href = targetId;
+                }
+            });
+        });
+        const newsletterForm = document.getElementById('newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                const submitBtn = this.querySelector('.btn');
+                const originalText = submitBtn.textContent;
+
+                submitBtn.textContent = 'Subscribed!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981, #34d399)';
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = 'linear-gradient(135deg, var(--accent), #2563eb)';
+                    this.reset();
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 
 </html>
