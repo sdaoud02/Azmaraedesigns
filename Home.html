@@ -71,10 +71,11 @@
             font-size: 1.8rem;
             letter-spacing: 0.3em;
             text-decoration: none;
-            color: var(--text);
+            color: #000000;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(218, 165, 32, 0.05) 100%);
+
             position: relative;
             padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(218, 165, 32, 0.05) 100%);
             border-radius: 8px;
             transition: all 0.4s ease;
         }
@@ -163,50 +164,21 @@
             z-index: -1;
         }
 
-        /* Azmarae Title with Elegant Styling */
         .azmarae-title {
             font-family: 'Playfair Display', 'Georgia', serif;
             font-size: 5.5rem;
             font-weight: 400;
             letter-spacing: 0.25em;
             margin-bottom: 2rem;
-            position: relative;
             line-height: 1.1;
-        }
-
-        .azmarae-title::before {
-            content: 'AZMARAE';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            color: transparent;
-            background: linear-gradient(45deg, rgba(184, 134, 11, 0.1) 0%, rgba(212, 175, 55, 0.2) 25%, rgba(255, 215, 0, 0.1) 50%, rgba(212, 175, 55, 0.2) 75%, rgba(184, 134, 11, 0.1) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            z-index: -1;
+            color: #b8860b;
         }
 
         .azmarae-title span {
-            display: inline-block;
-            background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f5e8a8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            position: relative;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 8px 25px rgba(184, 134, 11, 0.35);
-        }
-
-        .azmarae-title span::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 200px;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #d4af37, transparent);
-            animation: lineExpand 2s ease-out forwards;
+            color: #d4af37;
+            background: none;
+            -webkit-text-fill-color: initial;
+            text-shadow: none;
         }
 
         @keyframes lineExpand {
@@ -618,7 +590,7 @@
 </head>
 
 <body>
-    <header> <a href="Home.html" class="logo"><span>AZMARAÈ</span></a>
+    <header> <a href="Home.html" class="logo">AZMARAÈ</a>
         <nav> <a href="Home.html" style="color: #b8860b;">Home</a> <a href="Shop.html">Shop</a> <a
                 href="About.html">About</a> <a href="Contact.html">Contact</a> </nav>
     </header>
