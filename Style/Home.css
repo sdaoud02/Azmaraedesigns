@@ -1,19 +1,19 @@
 :root {
-     --primary-color: #1a365d;        
-    --secondary-color: #2b6cb0;     
-    --accent-color: #2c5282;         
-    --light-color: #f7fafc;          
-    --dark-color: #2d3748;          
-    --text-color: #2d3748;          
-    --text-light: #4a5568;           
-    --error-color: #c53030;          
-    --success-color: #2f855a;        
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #2c5282;
+    --light-color: #f7fafc;
+    --dark-color: #2d3748;
+    --text-color: #2d3748;
+    --text-light: #4a5568;
+    --error-color: #c53030;
+    --success-color: #2f855a;
     --border-radius: 8px;
-    --box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
 
- .skip-link {
+.skip-link {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -47,35 +47,46 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: #ffffff;  
+    background-color: #ffffff;
     min-height: 100vh;
 }
 
- h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     margin-bottom: 0.8rem;
     line-height: 1.3;
     color: var(--primary-color);
 }
 
-h1 { 
-    font-size: 2.5rem; 
+h1 {
+    font-size: 2.5rem;
     line-height: 1.2;
 }
-h2 { 
-    font-size: 2rem; 
+
+h2 {
+    font-size: 2rem;
     line-height: 1.25;
 }
-h3 { 
-    font-size: 1.75rem; 
+
+h3 {
+    font-size: 1.75rem;
     line-height: 1.3;
 }
-h4 { 
-    font-size: 1.5rem; 
+
+h4 {
+    font-size: 1.5rem;
     line-height: 1.35;
 }
 
-p, li, td, th {
+p,
+li,
+td,
+th {
     font-size: 1.1rem;
     line-height: 1.6;
     color: var(--text-color);
@@ -89,19 +100,20 @@ a {
     transition: var(--transition);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: var(--accent-color);
     text-decoration-thickness: 0.2em;
 }
 
- .container {
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
- .header {
+.header {
     text-align: center;
     padding: 2rem 0;
     background-color: var(--primary-color);
@@ -121,7 +133,7 @@ a:hover, a:focus {
     height: 200px;
 }
 
- .navbar {
+.navbar {
     background-color: var(--primary-color);
     padding: 1rem 0;
     position: sticky;
@@ -149,13 +161,13 @@ a:hover, a:focus {
     text-decoration: none;
 }
 
-.navbar a:hover, 
+.navbar a:hover,
 .navbar a:focus,
 .navbar a.active {
     background-color: white;
     color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     outline: 3px solid white;
 }
 
@@ -164,7 +176,7 @@ a:hover, a:focus {
     min-height: 60vh;
 }
 
- .footer {
+.footer {
     text-align: center;
     padding: 2rem 0;
     background-color: var(--primary-color);
@@ -182,7 +194,7 @@ a:hover, a:focus {
     color: white;
 }
 
- .button {
+.button {
     display: inline-block;
     background-color: var(--secondary-color);
     color: white;
@@ -201,7 +213,7 @@ a:hover, a:focus {
 .button:hover {
     background-color: var(--accent-color);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .button:focus {
@@ -210,7 +222,9 @@ a:hover, a:focus {
     background-color: var(--accent-color);
 }
 
- input, textarea, select {
+input,
+textarea,
+select {
     padding: 0.8rem;
     border: 2px solid #cbd5e0;
     border-radius: 4px;
@@ -220,15 +234,15 @@ a:hover, a:focus {
     background-color: white;
 }
 
-input:focus, 
-textarea:focus, 
+input:focus,
+textarea:focus,
 select:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 3px rgba(43, 108, 176, 0.3);
     outline: none;
 }
 
- .sr-only {
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -259,12 +273,13 @@ select:focus {
     font-size: 0.8em;
     font-weight: bold;
 }
+
 .header h1 {
     color: white;
 }
 
- a:focus, 
-button:focus, 
+a:focus,
+button:focus,
 input:focus,
 textarea:focus,
 select:focus,
@@ -274,11 +289,11 @@ select:focus,
     border-radius: 2px;
 }
 
- @media (max-width: 790px) {
+@media (max-width: 790px) {
     .header h1 {
         font-size: 2rem;
     }
-    
+
     .header img {
         width: 150px;
         height: 150px;
@@ -295,7 +310,7 @@ select:focus,
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
     }
-    
+
     .navbar a {
         padding: 0.75rem;
         font-size: 0.9rem;
@@ -307,7 +322,7 @@ select:focus,
         animation: none !important;
         transition: none !important;
     }
-    
+
     html {
         scroll-behavior: auto;
     }
