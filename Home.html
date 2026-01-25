@@ -166,19 +166,33 @@
 
         .azmarae-title {
             font-family: 'Playfair Display', 'Georgia', serif;
-            font-size: 5.5rem;
+            font-size: 5rem;
             font-weight: 400;
-            letter-spacing: 0.25em;
+            letter-spacing: 0.2em;
             margin-bottom: 2rem;
+            position: relative;
             line-height: 1.1;
-            color: #b8860b;
         }
 
         .azmarae-title span {
-            color: #d4af37;
-            background: none;
-            -webkit-text-fill-color: initial;
-            text-shadow: none;
+            display: inline-block;
+            background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #f5e8a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .azmarae-title span::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            animation: lineExpand 2s ease-out forwards;
         }
 
         @keyframes lineExpand {
@@ -192,6 +206,8 @@
                 opacity: 1;
             }
         }
+
+
 
         .hero-subtitle {
             font-size: 1.4rem;
